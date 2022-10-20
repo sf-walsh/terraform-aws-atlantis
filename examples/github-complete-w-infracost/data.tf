@@ -51,7 +51,7 @@ data "aws_subnet" "public_b" {
 }
 
 data "aws_acm_certificate" "atlantis" {
-  domain      = "atlantis-ecs-236211037.us-east-1.elb.amazonaws.com" #"${local.name}.${var.domain}"
+  domain      = "${local.name}.${var.domain}"
   most_recent = true
   statuses    = ["ISSUED"]
   types       = ["IMPORTED"]
