@@ -18,10 +18,6 @@ data "aws_vpc" "custom" {
   default = false
 }
 
-data "aws_availability_zones" "available" {
-  state = "available"
-}
-
 data "aws_subnet" "private_a" {
   vpc_id = data.aws_vpc.custom.id
 
