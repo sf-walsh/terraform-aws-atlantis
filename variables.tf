@@ -575,6 +575,12 @@ variable "atlantis_hide_prev_plan_comments" {
   default     = "false"
 }
 
+variable "infracost_api_key" {
+  description = "API Key Used for authenticating to Infracost for cost projections"
+  type        = string
+  default     = "false"
+}
+
 # Github
 variable "atlantis_github_user" {
   description = "GitHub username that is running the Atlantis command"

@@ -78,6 +78,10 @@ locals {
       name  = "ATLANTIS_HIDE_PREV_PLAN_COMMENTS"
       value = var.atlantis_hide_prev_plan_comments
     },
+    {
+      name  = "INFRACOST_API_KEY"
+      value = var.infracost_api_key
+    },
   ]
 
   # ECS task definition
