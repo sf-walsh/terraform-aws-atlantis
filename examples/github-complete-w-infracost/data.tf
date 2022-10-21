@@ -18,10 +18,6 @@ data "aws_vpc" "custom" {
   default = false
 }
 
-data "aws_availability_zones" "available" {
-  state = "available"
-}
-
 data "aws_subnet" "private_a" {
   vpc_id = data.aws_vpc.custom.id
 
@@ -55,7 +51,7 @@ data "aws_subnet" "public_b" {
 }
 
 data "aws_acm_certificate" "atlantis" {
-  domain      = "atlantis-ecs-236211037.us-east-1.elb.amazonaws.com" #"${local.name}.${var.domain}"
+  domain      = "${local.name}.${var.domain}"
   most_recent = true
   statuses    = ["ISSUED"]
   types       = ["IMPORTED"]

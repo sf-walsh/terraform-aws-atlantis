@@ -65,7 +65,7 @@ module "atlantis" {
   route53_private_zone = true
 
   # Trusted roles
-  trusted_entities = ["arn:aws:iam::230570994065:role/delegatedadmin/developer/atlantis-xaccount-test-role"]
+  trusted_entities     = ["arn:aws:iam::230570994065:role/delegatedadmin/developer/atlantis-xaccount-test-role"]
   trusted_principals   = ["ssm.amazonaws.com", "ecs-tasks.amazonaws.com"]
   permissions_boundary = "arn:aws:iam::${data.aws_caller_identity.current.account_id}:policy/cms-cloud-admin/developer-boundary-policy"
   path                 = "/delegatedadmin/developer/"
@@ -74,8 +74,8 @@ module "atlantis" {
   atlantis_github_user       = var.github_user
   atlantis_github_user_token = var.github_token
   atlantis_repo_allowlist    = [for repo in var.github_repo_names : "github.com/${var.github_owner}/${repo}"]
-  infracost_api_key               = var.infracost_api_key
-  atlantis_image = var.atlantis_image
+  infracost_api_key          = var.infracost_api_key
+  atlantis_image             = var.atlantis_image
 
   # ALB access
   alb_ingress_cidr_blocks         = var.alb_ingress_cidr_blocks
@@ -105,8 +105,8 @@ module "github_repository_webhook" {
 
   atlantis_repo_allowlist = var.github_repo_names
 
-  webhook_url    = "https://atlantis-ecs-236211037.us-east-1.elb.amazonaws.com/events" #module.atlantis.atlantis_url_events
-  webhook_secret = module.atlantis.webhook_secret
+  webhook_url          = "https://atlantis-ecs-236211037.us-east-1.elb.amazonaws.com/events" #module.atlantis.atlantis_url_events
+  webhook_secret       = module.atlantis.webhook_secret
   webhook_content_type = "json"
   webhook_insecure_ssl = true
 
