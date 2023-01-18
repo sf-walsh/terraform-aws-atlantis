@@ -2,6 +2,55 @@
 
 All notable changes to this project will be documented in this file.
 
+## [3.26.0](https://github.com/terraform-aws-modules/terraform-aws-atlantis/compare/v3.25.0...v3.26.0) (2022-12-15)
+
+
+### Features
+
+* Add ability to enable cross-zone load balancing ([#326](https://github.com/terraform-aws-modules/terraform-aws-atlantis/issues/326)) ([1d1c75f](https://github.com/terraform-aws-modules/terraform-aws-atlantis/commit/1d1c75f3396550920e4f55f2c2e10b99d39eecbb))
+
+## [3.25.0](https://github.com/terraform-aws-modules/terraform-aws-atlantis/compare/v3.24.1...v3.25.0) (2022-11-16)
+
+
+### Features
+
+* Use base security-group module to remove duplicate EFS security group ([#325](https://github.com/terraform-aws-modules/terraform-aws-atlantis/issues/325)) ([8433f55](https://github.com/terraform-aws-modules/terraform-aws-atlantis/commit/8433f5562daba6a1bcf28a57982564827f7bfed8))
+
+### [3.24.1](https://github.com/terraform-aws-modules/terraform-aws-atlantis/compare/v3.24.0...v3.24.1) (2022-11-07)
+
+
+### Bug Fixes
+
+* Update CI configuration files to use latest version ([#323](https://github.com/terraform-aws-modules/terraform-aws-atlantis/issues/323)) ([cf975dd](https://github.com/terraform-aws-modules/terraform-aws-atlantis/commit/cf975dd765b739ac9f3965ca81416c37f1f85c35))
+
+## [3.24.0](https://github.com/terraform-aws-modules/terraform-aws-atlantis/compare/v3.23.1...v3.24.0) (2022-11-03)
+
+
+### Features
+
+* Add permissions to access repository credentials to `ecs_task_access_secrets` ([#306](https://github.com/terraform-aws-modules/terraform-aws-atlantis/issues/306)) ([15e9d9b](https://github.com/terraform-aws-modules/terraform-aws-atlantis/commit/15e9d9be786c74e7fda7aa621292500fc2e0dea4))
+
+### [3.23.1](https://github.com/terraform-aws-modules/terraform-aws-atlantis/compare/v3.23.0...v3.23.1) (2022-11-01)
+
+
+### Bug Fixes
+
+* Remove unneeded ingress for EFS traffic from the entire VPC ([#318](https://github.com/terraform-aws-modules/terraform-aws-atlantis/issues/318)) ([9e0c0ff](https://github.com/terraform-aws-modules/terraform-aws-atlantis/commit/9e0c0ff1d3601d8e536b2d672cba4d1379286908))
+
+## [3.23.0](https://github.com/terraform-aws-modules/terraform-aws-atlantis/compare/v3.22.1...v3.23.0) (2022-10-31)
+
+
+### Features
+
+* Added support for GitHub app ([#276](https://github.com/terraform-aws-modules/terraform-aws-atlantis/issues/276)) ([27def83](https://github.com/terraform-aws-modules/terraform-aws-atlantis/commit/27def8345252cbd17904f3a31188ed4f12aa7a88))
+
+### [3.22.1](https://github.com/terraform-aws-modules/terraform-aws-atlantis/compare/v3.22.0...v3.22.1) (2022-10-22)
+
+
+### Bug Fixes
+
+* Cannot specify more than one extra_container_definitions ([#314](https://github.com/terraform-aws-modules/terraform-aws-atlantis/issues/314)) ([7c1ad25](https://github.com/terraform-aws-modules/terraform-aws-atlantis/commit/7c1ad25b53fb47db1c70086d2154a9532d320cd4))
+
 ## [3.22.0](https://github.com/terraform-aws-modules/terraform-aws-atlantis/compare/v3.21.0...v3.22.0) (2022-10-13)
 
 
